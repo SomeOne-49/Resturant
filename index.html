@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Put your description here." />
+    <title>My Resturant</title>
+    <!--! Google Font : (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--! Google Font : (Grand Hotel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap"
+      rel="stylesheet"
+    />
+    <!--! Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!--! stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="go-top d-none d-sm-block">
+      <i class="bi bi-caret-up-fill"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+      <div class="container">
+        <a class="navbar-brand" data-text="" href="#">
+          <img class="img-fluid" src="./imgs/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4 text-white position-relative p-0 m-2 active"
+                aria-current="page"
+                data-text="Home"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4 text-white position-relative p-0 m-2"
+                data-text="Product"
+                href="#product"
+                >Product</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4 text-white position-relative p-0 m-2"
+                data-text="Promo"
+                href="#promo "
+                >Promo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4 text-white position-relative p-0 m-2"
+                data-text="About"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4 text-white position-relative p-0 m-2"
+                data-text="Contact"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+            <div
+              class="search-box d-flex justify-content-center align-items-center gap-3 ms-lg-3 mt-2"
+            >
+              <i class="bi bi-search fs-4 d-none d-lg-block"></i>
+              <div class="box overflow-hidden w-75">
+                <input
+                  class="rounded-pill border-0 px-3 py-1 w-100"
+                  type="search"
+                  name="search"
+                  placeholder="Search..."
+                />
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--! ******************************** Main Section ******************************** -->
+    <main class="position-relative">
+      <div class="text-box d-inline-block position-absolute">
+        <h1 class="mb-0">Title Here</h1>
+        <p class="lead mb-5 text-white position-relative p-0 m-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <a href="#" class="btn px-5 py-2 fs-4 position-relative overflow-hidden"
+          ><span class="position-relative">Order Now</span></a
+        >
+      </div>
+      <a href="#product" class="btn go-down position-absolute d-none d-md-block"
+        ><i class="bi bi-chevron-double-down"></i
+      ></a>
+    </main>
+
+    <!--! ******************************** Seller Section ******************************** -->
+
+    <section id="product" class="seller py-5">
+      <div class="container py-5">
+        <div class="main-title text-center light mx-auto mb-5">
+          <h2 class="fs-1">Best Seller</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="card mb-3 border-0 align-items-center text-center">
+              <div class="img rounded-circle overflow-hidden">
+                <img
+                  src="imgs/converted/card1_2_11zon.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text w-75 mx-auto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card mb-3 border-0 align-items-center text-center">
+              <div class="img rounded-circle overflow-hidden">
+                <img
+                  src="imgs/converted/card2_3_11zon.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text w-75 mx-auto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card mb-3 border-0 align-items-center text-center">
+              <div class="img rounded-circle overflow-hidden">
+                <img
+                  src="imgs/converted/card3_4_11zon.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text w-75 mx-auto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! ******************************** Oriental Section ******************************** -->
+    <section id="promo" class="oriental pt-5 position-relative">
+      <div
+        class="background d-flex justify-content-center justify-content-md-around align-items-center py-5"
+      >
+        <div class="img rounded-circle overflow-hidden d-none d-md-block"></div>
+        <div class="text-box mt-3 ps-0 ps-md-5 text-center text-md-start">
+          <h2 class="fs-1 mb-0">Oriental Taste</h2>
+          <p class="lead mb-4 text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <a href="#" class="btn fs-4 px-5">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!--! ******************************** Statistics Section ******************************** -->
+    <section id="about" class="statistics py-5">
+      <div class="container py-5">
+        <div class="main-title text-center dark mx-auto mb-5">
+          <h2 class="fs-1">Statistics</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+            <div
+              class="box rounded-circle border border-white border-3 p-4 mx-auto"
+            >
+              <p class="fw-bold fs-2">132</p>
+              <span class="text-white fs-5">Outlets</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+            <div
+              class="box rounded-circle border border-white border-3 p-4 mx-auto"
+            >
+              <p class="fw-bold fs-2">100</p>
+              <span class="text-white fs-5">Chef</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3 mb-sm-0">
+            <div
+              class="box rounded-circle border border-white border-3 p-4 mx-auto"
+            >
+              <p class="fw-bold fs-2">300</p>
+              <span class="text-white fs-5">Menu</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div
+              class="box rounded-circle border border-white border-3 p-4 mx-auto"
+            >
+              <p class="fw-bold fs-2">30</p>
+              <span class="text-white fs-5">Country</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! ******************************** Chicken Grill Section ******************************** -->
+
+    <section class="chicken pb-5 mb-5 position-relative">
+      <div
+        class="background d-flex justify-content-center justify-content-md-around align-items-center py-5"
+      >
+        <div class="text-box mb-4 ps-0 ps-md-5 text-center text-md-start">
+          <h2 class="fs-1 mb-0">Chicken Grill</h2>
+          <p class="lead mb-4 text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <a href="#" class="btn fs-4 px-5">Order Now</a>
+        </div>
+        <div class="img rounded-circle overflow-hidden d-none d-md-block"></div>
+      </div>
+    </section>
+    <!--! ******************************** Quotation Section ******************************** -->
+
+    <section class="quotation pt-5">
+      <div
+        class="background text-center d-flex justify-content-center align-items-center flex-column"
+      >
+        <div class="box">
+          <p class="lead fs-2">
+            <span class="fw-bold">"</span> Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+            vestibulum. <span class="fw-bold">"</span>
+          </p>
+          <h2 class="fs-1">Lenora Fields</h2>
+        </div>
+      </div>
+    </section>
+
+    <!--! ******************************** Subscribe Section ******************************** -->
+
+    <section id="contact" class="subscribe">
+      <div class="container py-5">
+        <div class="main-title text-center light mx-auto mb-5">
+          <h2 class="fs-1">Subscribe</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+        </div>
+        <form class="mb-5">
+          <div class="row box w-75 mx-auto">
+            <div class="col-sm-12 col-lg-8 px-0 mb-2 mb-lg-0">
+              <input
+                class="border-0 py-2 px-4 fs-4 w-100"
+                type="email"
+                name="email"
+                placeholder="Enter Your Email..."
+              />
+            </div>
+            <div class="col-sm-12 col-lg-4 px-0">
+              <input
+                class="border-0 py-2 px-4 fs-4 fw-bold w-100 text-uppercase"
+                type="submit"
+                value="subscribe"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--! ******************* Footer Section ******************* -->
+    <footer class="pt-5 pb-2">
+      <div class="container py-5">
+        <div
+          class="row justify-content-between text-white text-center text-lg-start"
+        >
+          <div class="col-lg-5">
+            <div class="box text-white text-center text-lg-start mx-auto">
+              <h2 class="text-uppercase">Tometo</h2>
+              <p class="lead my-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+                dignissim enim.
+              </p>
+              <div
+                class="icons d-flex gap-3 justify-content-center justify-content-lg-start mb-5"
+              >
+                <a href="#"><i class="fs-3 bi bi-instagram"></i></a>
+                <a href="#"><i class="fs-3 bi bi-facebook"></i></a>
+                <a href="#"><i class="fs-3 bi bi-twitter"></i></a>
+                <a href="#"><i class="fs-3 bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-3">
+                <h2 class="fw-normal text-uppercase">About</h2>
+                <ul>
+                  <li><a class="lead" href="#">History</a></li>
+                  <li><a class="lead" href="#">Our Team</a></li>
+                  <li><a class="lead" href="#">Brand Guidelines</a></li>
+                  <li><a class="lead" href="#">Terms&Condition</a></li>
+                  <li><a class="lead" href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-3">
+                <h2 class="fw-normal text-uppercase">Services</h2>
+                <ul>
+                  <li><a class="lead" href="#">How To Order</a></li>
+                  <li><a class="lead" href="#">Our Product</a></li>
+                  <li><a class="lead" href="#">Order Status</a></li>
+                  <li><a class="lead" href="#">Promo</a></li>
+                  <li><a class="lead" href="#">Payment Method</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <h2 class="fw-normal text-uppercase">Other</h2>
+                <ul>
+                  <li><a class="lead" href="#">Contact Us</a></li>
+                  <li><a class="lead" href="#">Help</a></li>
+                  <li><a class="lead" href="#">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right text-center text-white fs-5">
+        All Rights Reserved <span>&copy;</span> 2022
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

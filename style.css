@@ -1,0 +1,489 @@
+:root {
+  --yellow: #ffc200;
+  --black: #303030;
+  --text-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.fs-1 {
+  font-size: calc(2rem + 1.5vw) !important;
+}
+
+.main-title {
+  max-width: 700px;
+}
+
+.main-title.light p,
+.main-title.light h2 {
+  color: var(--text-color);
+}
+
+.main-title.dark p {
+  color: white;
+}
+
+.main-title.dark h2 {
+  color: var(--yellow);
+}
+
+.main-title h2 {
+  font-family: "Grand Hotel", cursive;
+}
+
+@media (max-width: 767px) {
+  .main-title p {
+    font-size: 1.1rem;
+  }
+}
+
+.go-top {
+  position: fixed;
+  background: var(--yellow);
+  width: 40px;
+  height: 45px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 40px;
+  display: grid;
+  place-content: center;
+  color: var(--black);
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.go-top.show {
+  opacity: 1;
+}
+
+.go-top i {
+  animation: go-top .8s ease-in-out infinite alternate;
+}
+
+@keyframes go-top {
+  0% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+/**********************! NavBar Sectoin !************************/
+
+.navbar {
+  position: fixed;
+  z-index: 1023;
+}
+
+.bg-dark {
+  background-color: var(--black) !important;
+}
+
+.navbar img {
+  width: 190px;
+}
+
+
+
+.navbar-dark .navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-nav .search-box i {
+  color: white;
+  transition: color 0.4s, transform 0.4s;
+  cursor: pointer;
+}
+.navbar-nav .search-box i:hover {
+  color: var(--yellow);
+  transform: rotate(45deg);
+}
+
+.navbar-nav .search-box .box input {
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .navbar img {
+    width: 120px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    transition: color 0.4s;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--yellow) !important;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--yellow) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-dark {
+    background-color: transparent !important;
+  }
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0px;
+    color: transparent;
+    -webkit-text-fill-color: var(--yellow);
+    width: 0%;
+    overflow: hidden;
+    transition: width 0.6s;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover::after,
+  .navbar-dark .navbar-nav .nav-link.active::after {
+    width: 100%;
+  }
+
+  .navbar-nav .search-box .box {
+    width: 0px !important;
+    transition: width 0.4s;
+  }
+
+  .navbar-nav .search-box .box.show {
+    width: 174px !important;
+  }
+}
+
+/**********************! Main Sectoin !************************/
+main {
+  background-image: url("./imgs/converted/main1_9_11zon.webp");
+  height: 100vh;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0 0 0 / 30%);
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1550px) {
+  main {
+    background-image: url("./imgs/converted/main2_10_11zon.webp");
+  }
+  main .text-box {
+    left: 10%;
+  }
+}
+
+main .text-box {
+  right: 7%;
+  top: 27%;
+  max-width: 700px;
+  min-width: 285px;
+  z-index: 2;
+}
+
+main .text-box h1 {
+  font-family: "Grand Hotel", cursive;
+  color: var(--yellow);
+  font-size: 100px;
+}
+main .text-box p {
+  font-size: 1.8rem;
+}
+main .text-box a {
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: 600;
+}
+
+main .text-box a span {
+  z-index: 2;
+  transition: 0.3s;
+}
+
+main .text-box a:hover span {
+  color: white;
+}
+
+main .text-box a::before {
+  content: "";
+  position: absolute;
+  top: var(--y-axis);
+  left: var(--x-axis);
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  transition: width 0.8s, height 0.8s;
+  background-color: var(--black);
+}
+main .text-box a:hover::before {
+  width: 500px;
+  height: 500px;
+}
+
+main .go-down {
+  color: var(--yellow) !important;
+  bottom: 20px;
+  left: 50%;
+  font-size: 35px;
+  z-index: 2;
+  animation: go-down 1s ease-in-out infinite alternate;
+}
+
+@keyframes go-down {
+  0% {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+@media (max-width: 991px) {
+  main .text-box {
+    right: 0;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  main .text-box h1 {
+    font-size: 85px;
+  }
+  main .text-box p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main .text-box h1 {
+    font-size: 65px;
+  }
+  main .text-box p {
+    font-size: 1.5rem;
+  }
+}
+
+/**********************! Seller Sectoin !************************/
+.seller .card .img {
+  width: 200px;
+  height: 200px;
+}
+
+.seller .card h2 {
+  font-family: "Grand Hotel", cursive;
+  color: var(--black);
+}
+
+/**********************! Oriental & Chicken Grill Sectoin !************************/
+
+.oriental {
+  background-image: url("imgs/shapTop.png");
+}
+
+.chicken {
+  background-image: url("imgs/shapBottom.png");
+  background-position: 0 100%;
+}
+.oriental,
+.chicken {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 910px) {
+  .oriental::before,
+  .chicken::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #2f2f2f;
+  }
+  .oriental::before {
+    top: 56%;
+  }
+  .chicken::before {
+    bottom: 56%;
+  }
+  
+}
+@media (max-width: 490px) {
+    .oriental::before {
+    top: 30%;
+  }
+  .chicken::before {
+    bottom: 30%;
+  }
+  }
+.oriental .img {
+  background-image: url("imgs/oriental.png");
+}
+.chicken .img {
+  background-image: url("imgs/chicken.png");
+}
+
+.oriental .img,
+.chicken .img {
+  background-size: cover;
+}
+
+.oriental .text-box,
+.chicken .text-box {
+  max-width: 500px;
+}
+.oriental .text-box h2,
+.chicken .text-box h2 {
+  color: var(--yellow);
+  font-family: "Grand Hotel", cursive;
+}
+.oriental .text-box a,
+.chicken .text-box a {
+  background-color: rgb(255 194 0 / 90%);
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.oriental .text-box a:hover,
+.chicken .text-box a:hover {
+  background-color: var(--yellow);
+}
+
+@media (min-width: 1200px) {
+  .oriental .text-box h2,
+  .chicken .text-box h2 {
+    font-size: 4rem !important;
+  }
+  .oriental .text-box,
+  .chicken .text-box {
+    max-width: 600px;
+  }
+}
+
+/**********************! Statistics Sectoin !************************/
+
+.statistics {
+  background-image: url("./imgs/converted/design1_6_11zon.webp");
+  /* min-height: 725px; */
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.statistics .box {
+  width: 145px;
+  height: 145px;
+}
+.statistics .box p {
+  color: var(--yellow);
+}
+
+/**********************! Quotation Sectoin !************************/
+.quotation .background {
+  min-height: 500px;
+  background-image: url("./imgs/converted/background_1_11zon.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.quotation .box {
+  max-width: 700px;
+}
+
+.quotation .box p span {
+  color: #644c04;
+}
+
+.quotation .box h2 {
+  color: #212529;
+  font-family: "Grand Hotel", cursive;
+}
+/**********************! Subscribe Sectoin !************************/
+.subscribe {
+  background-image: url("./imgs/converted/design2_7_11zon.webp");
+  background-size: cover;
+  background-position: 0 0;
+}
+.subscribe form input[type="email"] {
+  box-shadow: 0 0 8px 0px rgb(0 0 0 / 15%);
+}
+.subscribe form input[type="email"]::placeholder {
+  color: rgb(0 0 0 / 35%);
+}
+
+.subscribe form input[type="submit"] {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/**********************! footer Sectoin !************************/
+footer {
+  background-color: var(--black);
+}
+
+footer .copy-right span {
+  color: var(--yellow);
+}
+
+footer {
+  background-color: var(--black);
+}
+
+footer .box {
+  max-width: 525px;
+}
+
+footer h2 {
+  color: var(--yellow);
+}
+
+footer .icons a i,
+footer ul li a {
+  transition: color 0.2s;
+}
+
+footer .box .icons a i:hover,
+footer ul li a:hover {
+  color: var(--yellow) !important;
+}
