@@ -93,7 +93,7 @@ h6 {
   opacity: 1;
 }
 
-.go-top.show i {
+.go-top.show i:hover {
   animation: go-top 0.8s ease-in-out infinite alternate;
 }
 
@@ -219,7 +219,6 @@ main .text-box {
   }
 }
 
-
 main .text-box h1 {
   color: var(--yellow);
   font-size: 100px;
@@ -303,6 +302,11 @@ main .go-down {
 }
 
 /**********************! Seller Sectoin !************************/
+
+.seller img {
+  width: 200px;
+  height: 200px;
+}
 
 .seller .card h2 {
   color: var(--black);
